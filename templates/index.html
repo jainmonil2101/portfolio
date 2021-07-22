@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Monil Jain - Full-Stack Django Developer</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Monil Jain</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>HI</span><br><span>I'<small>M</small> MONIL</span></h1>
+
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
+                </div>
+
+                <!-- <img src="assets/img/perfil.png" alt="" class="home__img"> -->
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="{% static 'assets/img/perfil.png' %}" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Monil Jain</h2>
+                    <span class="about__profession">Full-Stack Web Developer</span>
+                    <p class="about__text">I am a 18 year old self-taught Python Django Developer aspiring to create
+                        successful career in IT Industry. I love coding, which in turn motivated me in taking this
+                        career path. I love new challenges and also love building websites.</p>
+
+                    <div class="about__social">
+                        <a href="https://github.com/jainmonil2101" target="_blank" class="about__social-icon"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/hyperlinqed/" target="_blank" class="about__social-icon"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/monil-jain-96963b17a/" target="_blank"
+                            class="about__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Front-End Development</h3>
+                    <span class="skills__name">HTML</span>
+                    <span class="skills__name">CSS</span>
+                    <span class="skills__name">JavaScript</span>
+                    <span class="skills__name">Bootstrap</span>
+
+
+                    <h3 class="skills__subtitle">Back-End Development</h3>
+                    <span class="skills__name">Python</span>
+                    <span class="skills__name">Django</span>
+                </div>
+
+                <div class="skills__img">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/14/18/09/welder-673559_960_720.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio__container bd-grid">
+
+
+                <div>
+                    <div class="portfolio__img">
+                        <img src="{% static 'assets/img/work1.jpg' %}" alt="">
+                        <div class="portfolio__link">
+                            <a target="_blank" href="https://bit.ly/2Rmecrw" class="portfolio__link-name">View
+                                Details</a>
+                        </div>
+                    </div>
+                    <h3>Color Website</h3>
+                    <h4>Technologies Used: <p style="font-weight: 300;display: inline;">HTML, CSS & JavaScript
+                        </p>
+                    </h4>
+                    <h4>Description: <p style="font-weight: 300;display: inline;">Color Website is a template made using
+                            HTML, CSS & JavaScript for businesses who wants to showcase their business and build an
+                            online presence.</p>
+                    </h4>
+                </div>
+                <div>
+                    <div class="portfolio__img">
+                        <img src="{% static 'assets/img/work1.jpg' %}" alt="">
+                        <div class="portfolio__link">
+                            <a target="_blank" href="https://django-dento.herokuapp.com/
+                            " class="portfolio__link-name">View Details</a>
+                        </div>
+                    </div>
+                    <h3>Dento - A Dental Website</h3>
+                    <h4>Technologies Used: <p style="font-weight: 300;display: inline;">Bootstrap Template, Django
+                        </p>
+                    </h4>
+                    <h4>Description: <p style="font-weight: 300;display: inline;">Dento is a Dental Website for
+                            Dentists which gives all the information about the dental clinic or Dentists and also
+                            lets you request an appointment.</p>
+                    </h4>
+                </div>
+                <div>
+                    <div class="portfolio__img">
+                        <img src="{% static 'assets/img/work1.jpg' %}" alt="">
+                        <div class="portfolio__link">
+                            <a target="_blank" href="https://django-todowoo.herokuapp.com/"
+                                class="portfolio__link-name">View
+                                Details</a>
+                        </div>
+                    </div>
+                    <h3>TodoWoo - A Todo Application</h3>
+                    <h4>Technologies Used: <p style="font-weight: 300;display: inline;">HTML, Bootstrap, Django
+                        </p>
+                    </h4>
+                    <h4>Description: <p style="font-weight: 300;display: inline;">TodoWoo is a full-fledged Todo Web
+                            Application with Log In & Sign Up functionality, which let's you create & complete daily
+                            tasks.</p>
+                    </h4>
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">EMAIL</h3>
+                    <a href="mailto:hyperlinqed@gmail.com" class="contact__text">hyperlinqed@gmail.com</a>
+
+                    <h3 class="contact__subtitle">PHONE</h3>
+                    <a href="tel:+91 72289 72580" class="contact__text">+91 72289 72580</a>
+
+
+                </div>
+
+                <form action="" class="contact__form" method="POST">
+                    {% csrf_token %}
+                    <div class="contact__inputs">
+                        <input name="name" type="text" required placeholder="Name" class="contact__input">
+                        <input name="email" type="email" required placeholder="Email" class="contact__input">
+                    </div>
+
+                    <textarea name="message" required placeholder="Message" id="" cols="0" rows="10"
+                        class="contact__input"></textarea>
+
+                    <input type="submit" value="Send" class="contact__button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">MONIL JAIN</h2>
+                <p class="footer__text">Hi, I'm Monil Jain and this is my personal website.</p>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">EXPLORE</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">About</a></li>
+                    <li><a href="#skills" class="footer__link">Skills</a></li>
+                    <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                    <li><a href="#Contact" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">FOLLOW</h2>
+                <a href="https://github.com/jainmonil2101" target="_blank" class="footer__social"><i
+                        class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/hyperlinqed/" target="_blank" class="footer__social"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/monil-jain-96963b17a/" target="_blank" class="footer__social"><i
+                        class='bx bxl-linkedin'></i></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>
+
+
